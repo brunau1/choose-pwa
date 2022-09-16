@@ -1,0 +1,120 @@
+body {
+  background-color: #202124;
+  margin: 0;
+  padding: 0;
+  font-size: 12pt;
+  font-weight: normal;
+  line-height: 1.5rem;
+}
+
+#top-bar {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+#top-bar .logo {
+  align-self: center;
+  justify-self: center;
+  width: 30%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+#top-bar div {
+  width: 4%;
+  position: absolute;
+  right: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#top-bar a {
+  width: 100%;
+  display: flex;
+}
+
+#top-bar div:hover {
+  cursor: pointer;
+}
+
+#top-bar div:active {
+  width: 3.9%;
+}
+
+#top-bar a .icon {
+  width: 100%;
+}
+
+#choose-area {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#choose-left {
+  background: darkred;
+  box-shadow: inset -10px -10px 1px 0px #500000;
+}
+
+#choose-left:active {
+  box-shadow: inset 10px 10px 1px 0px #740000;
+}
+
+#choose-right {
+  background: #454bff;
+  box-shadow: inset -10px -10px 1px 0px #272eff;
+}
+
+#choose-right:active {
+  box-shadow: inset 10px 10px 1px 0px #3a40ff;
+}
+
+.choose-button {
+  cursor: pointer;
+  color: white;
+  font-size: 15pt;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 400px;
+  height: 400px;
+  border: none;
+}
+
+#add-question-area {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#add-question-span {
+  margin-left: 15px;
+}
+
+#add-question-button {
+  color: lightblue;
+  width: 90px;
+  height: 35px;
+  margin-left: 15px;
+  margin-right: 10px;
+  border: 1px solid lightblue;
+  background-color: transparent;
+}
+
+#add-question-button:active {
+  color: #202124;
+  border: 1px solid #9cd6e9;
+  background-color: lightblue;
+}
