@@ -9,7 +9,7 @@ const getSplitProp = (lang) => (lang === "en" ? "or" : "ou");
 const updateOptions = () => {
   const currLanguage = localStorage.getItem("language");
 
-  const questions = JSON.parse(localStorage.getItem("questions"));
+  const {questions} = JSON.parse(localStorage.getItem("app-content"));
   const currQuestions = questions[currLanguage];
 
   const randomPos = randomInt(0, currQuestions.length - 1);
@@ -35,13 +35,13 @@ const changeLanguage = () => {
 
 const setAppTextContent = () => {
   const currLanguage = localStorage.getItem("language");
-  const currAppContent = JSON.parse(localStorage.getItem("app-content"));
+  const {texts} = JSON.parse(localStorage.getItem("app-content"));
 
   document.querySelector("#add-question-span").innerText =
-    currAppContent[currLanguage].addQuestionSpan;
+    texts[currLanguage].addQuestionSpan;
 
   document.querySelector("#add-question-button").innerText =
-    currAppContent[currLanguage].addButton;
+    texts[currLanguage].addButton;
 };
 
 onload = () => {

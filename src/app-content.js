@@ -402,16 +402,15 @@ const questions = {
   ],
 };
 
-const content = {
+const texts = {
   en: {
     addButton: "Add now",
-    addQuestionSpan: "Wanna play too? Add custom questions!"
+    addQuestionSpan: "Wanna play too? Add custom questions!",
   },
   br: {
     addButton: "Adicionar",
-    addQuestionSpan: "Quer brincar também? Adicione opções personalizadas!"
-  }
-}
+    addQuestionSpan: "Quer brincar também? Adicione opções personalizadas!",
+  },
+};
 
-localStorage.setItem("questions", JSON.stringify(questions));
-localStorage.setItem("app-content", JSON.stringify(content));
+localStorage.setItem("app-content", JSON.stringify({ texts, questions }));
