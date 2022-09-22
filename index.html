@@ -3,8 +3,12 @@
   <head>
     <title>Choose!</title>
     <meta charset="utf-8" />
+    <meta name="application-name" content="Choose!" />
+    <meta name="apple-mobile-web-app-title" content="Choose!" />
+    <meta name="msapplication-starturl" content="/index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./src/style.css" />
+    <link rel="icon" href="./src/public/assets/site-icon.png" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto+Mono"
@@ -36,10 +40,26 @@
     </section>
 
     <section id="choose-area">
+      <div id="add-options-form-area">
+        <p id="add-options-desc">empty</p>
+        <input class="option-input" id="option-1-input" type="text" />
+        <span id="or-span">or</span>
+        <input class="option-input" id="option-2-input" type="text" />
+
+        <div class="confirm-options-area">
+          <button class="add-options-button" id="confirm-button" type="button">
+            <img src="./src/public/assets/confirm-icon.png" alt="confirm" />
+          </button>
+          <button class="add-options-button" id="cancel-button" type="button">
+            X
+          </button>
+        </div>
+      </div>
+
       <button type="button" id="choose-left" class="choose-button">
         empty
       </button>
-      <button type="submit" id="choose-right" class="choose-button">
+      <button type="button" id="choose-right" class="choose-button">
         empty
       </button>
     </section>

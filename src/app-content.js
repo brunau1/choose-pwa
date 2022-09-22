@@ -217,7 +217,6 @@ const questions = {
     "Panquecas ou waffles",
     "Manhã ou noite",
     "Beisebol ou vôlei",
-    "Próximo: 226 perguntas sobre coisas favoritas",
     "Crédito ou dinheiro",
     "Tacos ou asas",
     "Compras na loja ou online",
@@ -406,10 +405,14 @@ const texts = {
   en: {
     addButton: "Add now",
     addQuestionSpan: "Wanna play too? Add custom questions!",
+    addOptionsDesc: "Add options in the fields below. The options you create will be randomly selected among the other options available.",
+    fillOptionsAlert: "Please, fill both options"
   },
   br: {
     addButton: "Adicionar",
     addQuestionSpan: "Quer brincar também? Adicione opções personalizadas!",
+    addOptionsDesc: "Adicione as opções nos campos abaixo. As opções que você criar serão sorteadas aleatoriamente entre as demais opções existentes.",
+    fillOptionsAlert: "Por favor, preencha ambas as opções"
   },
 };
 
