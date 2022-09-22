@@ -1,5 +1,3 @@
-let $leftButton, $rightButton;
-
 const randomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
@@ -18,8 +16,8 @@ const updateOptions = () => {
     getSplitProp(currLanguage)
   );
 
-  $leftButton.innerText = leftText;
-  $rightButton.innerText = rightText;
+  document.querySelector("#choose-left").innerText = leftText;
+  document.querySelector("#choose-right").innerText = rightText;
 };
 
 const changeLanguage = () => {
@@ -92,17 +90,12 @@ const confirmAddOptions = () => {
 onload = () => {
   localStorage.setItem("language", "en");
 
-  document.querySelector("#change-language").onclick = changeLanguage;
-  document.querySelector("#confirm-button").onclick = confirmAddOptions;
+  document.querySelector("#choose-left").onclick = updateOptions;
+  document.querySelector("#choose-right").onclick = updateOptions;
   document.querySelector("#cancel-button").onclick = closeAddOptionsArea;
+  document.querySelector("#confirm-button").onclick = confirmAddOptions;
+  document.querySelector("#change-language").onclick = changeLanguage;
   document.querySelector("#add-question-button").onclick = showAddOptionsArea;
-
-  $leftButton = document.querySelector("#choose-left");
-  $rightButton = document.querySelector("#choose-right");
-
-  $leftButton.onclick = updateOptions;
-
-  $rightButton.onclick = updateOptions;
 
   setAppTextContent();
   updateOptions();
