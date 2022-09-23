@@ -1,0 +1,11 @@
+{
+  "name": "Choose",
+  "short-name": "Choose",
+  "theme_color": "#202124",
+  "background_color": "#202124",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": ["pt-BR", "en-US"],
+  "start_url": ".",
+  "scope": "."
+}

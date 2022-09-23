@@ -7,8 +7,8 @@
     <meta name="apple-mobile-web-app-title" content="Choose!" />
     <meta name="msapplication-starturl" content="/index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./src/style.css" />
-    <link rel="icon" href="./src/public/assets/site-icon.png" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="icon" href="./src/assets/site-icon.png" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto+Mono"
@@ -18,21 +18,17 @@
         font-family: "Roboto Mono", serif;
       }
     </style>
-    <script src="./src/app-content.js"></script>
-    <script src="./src/choose.js"></script>
+    <script src="./src/js/app-content.js"></script>
+    <script src="./src/js/choose.js"></script>
   </head>
   <body>
     <section id="top-bar">
-      <img
-        class="logo"
-        src="./src/public/assets/choose.png"
-        alt="Choose! game"
-      />
+      <img class="logo" src="./src/assets/choose.png" alt="Choose! game" />
       <div>
         <a id="change-language">
           <img
             class="icon"
-            src="./src/public/assets/language-icon.png"
+            src="./src/assets/language-icon.png"
             alt="Change language"
           />
         </a>
@@ -48,14 +44,13 @@
 
         <div class="confirm-options-area">
           <button class="add-options-button" id="confirm-button" type="button">
-            <img src="./src/public/assets/confirm-icon.png" alt="confirm" />
+            <img src="./src/assets/confirm-icon.png" alt="confirm" />
           </button>
           <button class="add-options-button" id="cancel-button" type="button">
             X
           </button>
         </div>
       </div>
-
       <button type="button" id="choose-left" class="choose-button">
         empty
       </button>

@@ -1,9 +1,12 @@
+// gera um numero aleatorio entre um valor minimo e maximo
 const randomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
+// retorna o tipo de separador das frases de acordo com o idioma atual
 const getSplitProp = (lang) => (lang === "en" ? "or" : "ou");
 
+// atualiza as opções de escolha disponiveis para o usuário
 const updateOptions = () => {
   const currLanguage = localStorage.getItem("language");
 
@@ -20,6 +23,9 @@ const updateOptions = () => {
   document.querySelector("#choose-right").innerText = rightText;
 };
 
+// função chamada ao alterar a linguagem do app
+// caso a linguagem atual seja "br", define como "en"
+// e vice versa
 const changeLanguage = () => {
   const currLanguage = localStorage.getItem("language");
 
@@ -31,6 +37,7 @@ const changeLanguage = () => {
   updateOptions();
 };
 
+// atualiza os textos da aplicação de acordo com o idioma atual
 const setAppTextContent = () => {
   const currLanguage = localStorage.getItem("language");
   const { texts } = JSON.parse(localStorage.getItem("app-content"));
@@ -44,7 +51,8 @@ const setAppTextContent = () => {
   document.querySelector("#add-options-desc").innerText =
     texts[currLanguage].addOptionsDesc;
 };
-
+// abre a tela de adicionar novas opções
+// fecha a tela principal
 const showAddOptionsArea = () => {
   document.querySelector("#choose-left").style.display = "none";
   document.querySelector("#choose-right").style.display = "none";
@@ -52,6 +60,8 @@ const showAddOptionsArea = () => {
   document.querySelector("#add-options-form-area").style.display = "flex";
 };
 
+// fecha a tela de adicionar novas opções
+// abre a tela principal
 const closeAddOptionsArea = () => {
   document.querySelector("#choose-left").style.display = "block";
   document.querySelector("#choose-right").style.display = "block";
@@ -59,6 +69,8 @@ const closeAddOptionsArea = () => {
   document.querySelector("#add-options-form-area").style.display = "none";
 };
 
+// função chamada ao clicar no botão de "confirma"
+// ao adicionar novas opções de escolha à lista
 const confirmAddOptions = () => {
   const currLanguage = localStorage.getItem("language");
   const { texts } = JSON.parse(localStorage.getItem("app-content"));
@@ -87,6 +99,8 @@ const confirmAddOptions = () => {
   updateOptions();
 };
 
+// inicializa os recursos da aplicação
+// adiciona as funções dos botões e demais elementos da aplicação
 onload = () => {
   localStorage.setItem("language", "en");
 

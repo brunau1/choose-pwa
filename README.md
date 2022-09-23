@@ -28,3 +28,14 @@ Também é possível adicionar novas opções que serão sorteadas junto às dem
 <img style="width: 250px" src="./src/public/assets/print2.png">
 </div>
 </div>
+
+# Pontos Avaliados
+
+- [x] A aplicação é original e não uma cópia
+- [x] A aplicação tem pelo menos duas interfaces independentes
+- [x] A aplicação armazena e usa de forma relevante dados complexos
+- [x] A aplicação possui um manifesto para instalação no dispositivo do usuário
+- [x] A aplicação possui um service worker que permite o funcionamento off-line
+- [x] O código possui comentários explicando cada operação
+- [x] A aplicação está funcionando corretamente
+- [x] A aplicação está completa
